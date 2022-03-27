@@ -20,16 +20,17 @@ void conv_calci(void)
     printf("\n\tEnter the number of your choice\n");
 
     scanf("%d", &choice);
-
-    printf("\n\t Enter Input Unit Value\n");
-
-    scanf("%d", &ip_value);
     
     if(choice == 6)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
     }
+    
+    printf("\n\t Enter Input Unit Value\n");
+
+    scanf("%d", &ip_value);
+
     switch(choice)
     {
         case 1:
