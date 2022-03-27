@@ -16,6 +16,12 @@ int main()
 void conv_calci(void)
 {
     printf("\nUnit-Unit Conversion\n");
+    printf("")
+}
+
+void length_conv(void)
+{
+
     printf("\n1. cm-mm\n2. m-cm\n3. km-m\n4. ft-m\n5. Inch-cm\n6. exit");
     printf("\n\tEnter the number of your choice\n");
 
