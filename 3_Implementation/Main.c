@@ -1,6 +1,6 @@
 #include "length_covt.h"
 
-unsigned int choice = 0;
+unsigned int parameter, choice = 0;
 unsigned int ip_value;
 
 void conv_calci(void);
@@ -16,7 +16,37 @@ int main()
 void conv_calci(void)
 {
     printf("\nUnit-Unit Conversion\n");
-    printf("")
+    
+    printf("Select from the following Parameters\n");
+    printf("\n1. Length\n2. Area\n3. Volume\n4. exit");
+    printf("\n\tEnter the number of your choice\n");
+    
+    scanf("%d", &parameter);    
+
+    if(parameter == 4)
+    {
+        printf("\nCalculator closed.\n");
+        exit(0);
+    }
+    
+    switch(parameter)
+    {
+        case 1:
+            length_conv();
+            break;
+        case 2:
+            area_conv();
+            break;
+        case 3:
+            volume_conv();
+            break;
+        case 4:
+            exit(0);
+            break;
+        default:
+            printf("\n\t---Enter a valid choice---\n");
+
+    }
 }
 
 void length_conv(void)
