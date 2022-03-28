@@ -106,3 +106,13 @@ void length_conv(void)
             printf("\n\t---It should never come here---\n");
     }
 }
+
+void area_conv(void)
+{
+    printf("\n1. sqkm-sqft\n2. sqkm-hecter\n3. sqkm-sqm\n4. sqkm-acer\n5. exit");
+    printf("\n\tEnter the number of your choice\n");
+
+    scanf("%d", &choice);
+    
+
+}
