@@ -58,16 +58,10 @@ void conv_calci(void)
 void length_conv(void)
 {
 
-    printf("\n1. cm-mm\n2. m-cm\n3. km-m\n4. ft-m\n5. Inch-cm\n6. exit");
+    printf("\n1. cm-mm\n2. m-cm\n3. km-m\n4. ft-m\n5. Inch-cm");
     printf("\n\tEnter the number of your choice\n");
 
     scanf("%d", &choice);
-    
-    if(choice == 6)
-    {
-        printf("\nThank you. Exiting the Application\n");
-        exit(0);
-    }
     
     printf("\n\t Enter Input Length Value\n");
 
@@ -105,9 +99,6 @@ void length_conv(void)
             //__fpurge(stdin);
             //getchar();
             break;
-        case 6:
-            exit(0);
-            break;
         default:
             printf("\n\t---Enter a valid choice---\n");
     }
@@ -115,7 +106,7 @@ void length_conv(void)
 
 void area_conv(void)
 {
-    printf("\n1. sqm-sqft\n2. sqkm-hecter\n3. sqkm-sqm\n4. sqkm-acer\n5. exit");
+    printf("\n1. sqm-sqft\n2. sqkm-hecter\n3. sqkm-sqm\n4. sqkm-acer");
     printf("\n\tEnter the number of your choice\n");
 
     scanf("%d", &choice);
@@ -138,9 +129,6 @@ void area_conv(void)
         case 4:
             printf("\n\t%d sqkm = %f acer\n", area_ip, sqkmTOacer(area_ip));
             break;
-        case 5:
-            exit(0);
-            break;
         default:
             printf("\n\t---Enter a valid choice---\n");
     }
@@ -149,7 +137,7 @@ void area_conv(void)
 
 void volume_conv(void)
 {
-     printf("\n1. Lt-cubic.cm\n2. Lt-cubic.m\n3. cubic.m-cubic.cm\n4. exit");
+     printf("\n1. Lt-cmCube\n2. Lt-mCube\n3. mCube-cmCube");
     printf("\n\tEnter the number of your choice\n");
 
     scanf("%d", &choice);
@@ -158,4 +146,19 @@ void volume_conv(void)
 
     scanf("%d", &volume_ip);
     
+        switch(choice)
+    {
+        case 1:
+            printf("\n\t%d Lt = %d cmCube\n", volume_ip, LtTOcmCube(volume_ip));
+            break;
+        case 2:
+            printf("\n\t%d Lt = %f mCube\n", volume_ip, LtTOmCube(volume_ip));
+            break;
+        case 3:
+            printf("\n\t%d mCube = %d cmCube\n", volume_ip, mCubeTOcmCube(volume_ip));
+            break;
+        default:
+            printf("\n\t---Enter a valid choice---\n");
+    }
+
 }
