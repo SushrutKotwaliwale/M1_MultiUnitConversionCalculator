@@ -22,9 +22,9 @@ int main()
 
 void conv_calci(void)
 {
-    printf("\nUnit-Unit Conversion\n");
+    printf("\n\tUnit-Unit Conversion Calculator\n");
     
-    printf("Select from the following Parameters\n");
+    printf("\n\tSelect from the following Parameters");
     printf("\n1. Length\n2. Area\n3. Volume\n4. exit");
     printf("\n\tEnter the number of your choice\n");
     
@@ -58,7 +58,7 @@ void conv_calci(void)
 
 void length_conv(void)
 {
-
+    printf("\n\tSelect the input and output unit");
     printf("\n1. cm-mm\n2. m-cm\n3. km-m\n4. ft-m\n5. Inch-cm");
     printf("\n\tEnter the number of your choice\n");
 
@@ -71,31 +71,31 @@ void length_conv(void)
     switch(choice)
     {
         case 1:
-            printf("\n\t%d cm = %d mm\nEnter to continue", length_ip, cmTOmm(length_ip));
+            printf("\n\t%d cm = %d mm\n", length_ip, cmTOmm(length_ip));
             
             //__fpurge(stdin);
             //getchar();
             break;
         case 2:
-            printf("\n\t%d cm = %d mm\nEnter to continue", length_ip, mTOcm(length_ip));
+            printf("\n\t%d cm = %d mm\n", length_ip, mTOcm(length_ip));
             
             //__fpurge(stdin);
             //getchar();
             break;
         case 3:
-            printf("\n\t%d cm = %d mm\nEnter to continue", length_ip, kmTOm(length_ip));
+            printf("\n\t%d cm = %d mm\n", length_ip, kmTOm(length_ip));
             
             //__fpurge(stdin);
             //getchar();
             break;
         case 4:
-            printf("\n\t%d cm = %f mm\nEnter to continue", length_ip, ftTOm(length_ip));
+            printf("\n\t%d cm = %f mm\n", length_ip, ftTOm(length_ip));
             
             //__fpurge(stdin);
             //getchar();
             break;
         case 5:
-            printf("\n\t%d cm = %f mm\nEnter to continue", length_ip, inchTOcm(length_ip));
+            printf("\n\t%d cm = %f mm\n", length_ip, inchTOcm(length_ip));
             
             //__fpurge(stdin);
             //getchar();
@@ -107,6 +107,7 @@ void length_conv(void)
 
 void area_conv(void)
 {
+    printf("\n\tSelect the input and output unit");
     printf("\n1. sqm-sqft\n2. sqkm-hecter\n3. sqkm-sqm\n4. sqkm-acer");
     printf("\n\tEnter the number of your choice\n");
 
@@ -138,7 +139,8 @@ void area_conv(void)
 
 void volume_conv(void)
 {
-     printf("\n1. Lt-cmCube\n2. Lt-mCube\n3. mCube-cmCube");
+    printf("\n\tSelect the input and output unit");
+    printf("\n1. Lt-cmCube\n2. Lt-mCube\n3. mCube-cmCube");
     printf("\n\tEnter the number of your choice\n");
 
     scanf("%d", &choice);
