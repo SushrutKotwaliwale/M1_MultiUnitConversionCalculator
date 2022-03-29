@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 
 #include "length_covt.h"
 #include "area_covt.h"

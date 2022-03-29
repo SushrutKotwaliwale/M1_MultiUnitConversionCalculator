@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Tue Mar 29 2022 14:44:38 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* 3_Implementation/Main.c
+
+
+Created files:
+* .autogit/logs/log-29-2-2022-14-14-20.txt
+
+
+Deleted files:
+
+
+Renamed files:
