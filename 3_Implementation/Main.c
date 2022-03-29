@@ -10,6 +10,9 @@ unsigned int parameter, choice = 0;
 unsigned int length_ip, area_ip, volume_ip;
 
 void conv_calci(void);
+void length_conv(void);
+void area_conv(void);
+void volume_conv(void);
 
 int main()
 {
