@@ -1,22 +1,22 @@
 #include "length_covt.h"
 
-int cmTOmm(int ip_value)
+int cmTOmm(int length_ip)
 {
-    return ip_value*10;
+    return length_ip*10;
 }
-int mTOcm(int ip_value)
+int mTOcm(int length_ip)
 {
-    return ip_value*100;
+    return length_ip*100;
 }
-int kmTOm(int ip_value)
+int kmTOm(int length_ip)
 {
-    return ip_value*1000;
+    return length_ip*1000;
 }
-float ftTOm(int ip_value)
+float ftTOm(int length_ip)
 {
-    return ip_value*0.3048;
+    return length_ip*0.3048;
 }
-float inchTOcm(int ip_value)
+float inchTOcm(int length_ip)
 {
-    return ip_value*2.54;
+    return length_ip*2.54;
 }
